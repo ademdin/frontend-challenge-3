@@ -1,0 +1,182 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  background-color: hsl(240, 73%, 65%);
+  font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.container {
+  background-color: white;
+  width: 60%;
+  padding: 4% 2%;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px;
+}
+
+/* FAQ Section */
+
+/* Headings */
+
+h1 {
+  margin-bottom: 60px;
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+h6 {
+  display: inline-block;
+  margin: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Arrow Image in Headings */
+
+.arrowDiv {
+  text-align: right;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.forHover:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.faq {
+  width: 85%;
+}
+
+.answer {
+  font-size: 0.8rem;
+  color: hsl(240, 6%, 50%);
+  margin-top: 8px;
+}
+
+.hiddenDiv {
+  display: none;
+}
+
+/* Images Section */
+
+.firstimg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+.secondimg {
+  position: absolute;
+  left: 0px;
+}
+
+.thirdimg {
+  position: absolute;
+  left: -92px;
+  top: 220px;
+}
+
+/* Mobile Images */
+
+.firstImgMobile {
+  display: none;
+}
+
+.secondImgMobile {
+  display: none;
+}
+
+@media (max-width: 1399px) {
+
+  .container {
+    padding: 0 50px 50px;
+    margin-top: 150px;
+  }
+
+  /* Hiding Desktop Images */
+
+  .firstimg {
+    display: none;
+  }
+
+  .secondimg {
+    display: none;
+  }
+
+  .thirdimg {
+    display: none;
+  }
+
+  /* Mobile Images */
+
+  .firstImgMobile {
+    display: block;
+    margin: 0 auto 70px auto;
+
+  }
+
+  .secondImgMobile {
+    display: block;
+    position: absolute;
+    top: -110px;
+    left: 30%;
+    right: 30%;
+  }
+
+  /* FAQ Section */
+
+  h1 {
+    text-align: center;
+  }
+
+  .faq {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 920px) {
+
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .secondImgMobile {
+    left: 20%;
+  }
+
+  .container {
+    padding: 3% 5% 8%;
+  }
+}
+
+@media (max-width: 400px) {
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  .answer {
+    font-size: 0.7rem;
+  }
+
+  .firstImgMobile {
+    margin-bottom: 30px;
+
+  }
+
+  .secondImgMobile {
+    left: 5%;
+  }
+}
